@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Edit Customer</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: blue;
+            }
+
+        li {
+            float: left;
+            }
+        #viv{
+            float:right;
+        }    
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        li a:hover {
+            background-color: #111;
+            }
+    </style>    
+  </head>
+  <body style="background: grey">
+    <header>
+      <ul style="float:left; width:50%;">
+        <li><a class="active" href="#home"><img src="./images.jfif" height="14 px" >
+                  <b>Customers Management</b></a></li>
+        </ul> 
+        <ul style="float:right; width:50%">    
+          <li id="viv"><input type="button" value="Login" style="display: inline; margin-top:3px; padding:10px 15px;"></li>
+          <li id="viv"><a href="#about">About</a></li>
+          <li id="viv"><a href="#orders">orders</a></li>
+          <li id="viv"><a href="#customers">Customers</a></li>
+        </ul>
+  </header>
+    <h1>Edit Customer </h1>
+    <p><b>Ward Bell</b><a style="font-size: 10px;">(View Orders)</a></p>
+    <form >
+    <table>
+      
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" minlength="5" required/></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" minlength="5" required/></td>
+      </tr>
+      <tr>
+        <td>Contact No.:</td>
+        <td><input type="number" maxlength="10" required/></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td><input type="radio" />Male
+        <input type="radio" />Female</td>    
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Zip:</td>
+        <td><input type="number" /></td>
+      </tr>    
+      
+      <tr>
+        <td><br><br></td>
+        <td><input type="submit" value="Update" style="color:white; background-color:Blue";/>
+          <input type="submit" value="Delete" style="color:white; background-color:Red"; /></td>
+      </tr>
+    </table>
+    </form>
+  </body>
+</html> 
